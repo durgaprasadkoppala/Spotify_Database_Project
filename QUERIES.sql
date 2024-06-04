@@ -12,7 +12,7 @@ select* from SP_User where Ad_ID in
 (select Ad_ID 
 from SP_Advertisements where Type='Insurance')) 
  
-3) Display Drake's albums.  
+3) Display Drakes albums.  
 select Artist_Name, Album_Title, Release_Date, Total_Tracks 
 from SP_Albums SA, SP_ArtistAlbum SAA, SP_Artists SAAA 
 where SA.Artist_ID=SAA.Artist_ID and SAA.Artist_ID=SAAA.Artist_ID and Artist_Name='Drake' 
